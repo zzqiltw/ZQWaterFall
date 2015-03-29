@@ -21,6 +21,8 @@
 		6D2B45841AC304D0008CFE29 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D2B45661AC304D0008CFE29 /* UIKit.framework */; };
 		6D2B458C1AC304D0008CFE29 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6D2B458A1AC304D0008CFE29 /* InfoPlist.strings */; };
 		6D2B458E1AC304D0008CFE29 /* ___Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D2B458D1AC304D0008CFE29 /* ___Tests.m */; };
+		6D2B459C1AC30517008CFE29 /* ZQWaterFallCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D2B459B1AC30517008CFE29 /* ZQWaterFallCell.m */; };
+		6D2B459F1AC3052C008CFE29 /* ZQWaterFallView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D2B459E1AC3052C008CFE29 /* ZQWaterFallView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,10 @@
 		6D2B45891AC304D0008CFE29 /* 瀑布流Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "瀑布流Tests-Info.plist"; sourceTree = "<group>"; };
 		6D2B458B1AC304D0008CFE29 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		6D2B458D1AC304D0008CFE29 /* ___Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "___Tests.m"; sourceTree = "<group>"; };
+		6D2B459A1AC30517008CFE29 /* ZQWaterFallCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZQWaterFallCell.h; sourceTree = "<group>"; };
+		6D2B459B1AC30517008CFE29 /* ZQWaterFallCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZQWaterFallCell.m; sourceTree = "<group>"; };
+		6D2B459D1AC3052C008CFE29 /* ZQWaterFallView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZQWaterFallView.h; sourceTree = "<group>"; };
+		6D2B459E1AC3052C008CFE29 /* ZQWaterFallView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZQWaterFallView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,11 +118,9 @@
 		6D2B45681AC304D0008CFE29 /* 瀑布流 */ = {
 			isa = PBXGroup;
 			children = (
-				6D2B45711AC304D0008CFE29 /* ZQAppDelegate.h */,
-				6D2B45721AC304D0008CFE29 /* ZQAppDelegate.m */,
-				6D2B45741AC304D0008CFE29 /* Main.storyboard */,
-				6D2B45771AC304D0008CFE29 /* ZQViewController.h */,
-				6D2B45781AC304D0008CFE29 /* ZQViewController.m */,
+				6D2B45991AC304FF008CFE29 /* View */,
+				6D2B45981AC304F4008CFE29 /* Other */,
+				6D2B45971AC304DB008CFE29 /* Controller */,
 				6D2B457A1AC304D0008CFE29 /* Images.xcassets */,
 				6D2B45691AC304D0008CFE29 /* Supporting Files */,
 			);
@@ -150,6 +154,36 @@
 				6D2B458A1AC304D0008CFE29 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6D2B45971AC304DB008CFE29 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				6D2B45771AC304D0008CFE29 /* ZQViewController.h */,
+				6D2B45781AC304D0008CFE29 /* ZQViewController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		6D2B45981AC304F4008CFE29 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				6D2B45711AC304D0008CFE29 /* ZQAppDelegate.h */,
+				6D2B45721AC304D0008CFE29 /* ZQAppDelegate.m */,
+				6D2B45741AC304D0008CFE29 /* Main.storyboard */,
+			);
+			name = Other;
+			sourceTree = "<group>";
+		};
+		6D2B45991AC304FF008CFE29 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				6D2B459A1AC30517008CFE29 /* ZQWaterFallCell.h */,
+				6D2B459B1AC30517008CFE29 /* ZQWaterFallCell.m */,
+				6D2B459D1AC3052C008CFE29 /* ZQWaterFallView.h */,
+				6D2B459E1AC3052C008CFE29 /* ZQWaterFallView.m */,
+			);
+			name = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -251,6 +285,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				6D2B456F1AC304D0008CFE29 /* main.m in Sources */,
+				6D2B459F1AC3052C008CFE29 /* ZQWaterFallView.m in Sources */,
+				6D2B459C1AC30517008CFE29 /* ZQWaterFallCell.m in Sources */,
 				6D2B45731AC304D0008CFE29 /* ZQAppDelegate.m in Sources */,
 				6D2B45791AC304D0008CFE29 /* ZQViewController.m in Sources */,
 			);
